@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101310">
+  <meta name="description" content="A quiet, offline-ready white noise player.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>Still — white noise</title>
+</head>
+<body>
+  <main class="player">
+    <div class="topline"><span class="mark">S</span><span>STILL</span><span class="offline"><i></i> READY OFFLINE</span></div>
+    <section class="center">
+      <div class="orb" id="orb"><div class="orb-core"></div><div class="ring ring-one"></div><div class="ring ring-two"></div></div>
+      <p class="eyebrow">A LITTLE QUIETER</p>
+      <h1>White noise<span>.</span></h1>
+      <p class="subtitle">A steady hush, wherever you are.</p>
+      <button id="toggle" class="play" aria-label="Start white noise"><span class="play-icon">▶</span><span class="button-label">Start listening</span></button>
+      <p id="status" class="status" aria-live="polite">Sound is off</p>
+    </section>
+    <section class="controls" aria-label="Sound controls">
+      <div class="control-heading"><label for="volume">VOLUME</label><output id="volume-value">35%</output></div>
+      <input id="volume" type="range" min="0" max="100" value="35" aria-label="Volume">
+      <div class="ticks"><span>SOFT</span><span>FULL</span></div>
+    </section>
+    <footer>GENERATED HERE, ON YOUR DEVICE <span>·</span> NO INTERNET NEEDED AFTER FIRST LOAD</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

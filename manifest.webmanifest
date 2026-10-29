@@ -1,0 +1,1 @@
+{"name":"Still — White Noise","short_name":"Still","description":"A quiet, offline-ready white noise player.","start_url":"./","scope":"./","display":"standalone","background_color":"#101310","theme_color":"#101310","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
